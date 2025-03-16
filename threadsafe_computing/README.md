@@ -1,5 +1,5 @@
 # Stack Data Structure - Lock-Based and Lock-Free Implementations
-This repository provides two implementations of the stack data structure in C++: one using locks (mutex) and the other using a lock-free approach. Both implementations are designed to demonstrate the key differences in handling concurrent access to the stack.
+This repository provides two implementations of the stack data structure in C++: one using locks (mutex) and the other using a lock-free approach. Both implementations are designed to demonstrate the key differences in handling concurrent access to the stack. Main purpose of the implementation to understand how to isolate a data structures's operations to set guards for most critical data-related operations. This is an example of a stack, but the versatility of the logic allows for a queue's, tree's, heap's data structure logic alike to be modified such that most crucial data operations modifying the structure can be made atomic and locked/released as needed to prevent data races across multithreaded applications.
 
 ## Table of Contents
 * Overview
